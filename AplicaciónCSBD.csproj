@@ -1,0 +1,398 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{FACEDA38-4D4C-42BC-9EEB-FD3A2DDEF038}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AplicaciónCSBD</RootNamespace>
+    <AssemblyName>AplicaciónCSBD</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="GestorBD">
+      <HintPath>..\GestorBD\bin\Debug\GestorBD.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.OracleClient" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DSAlumCalifs.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSAlumCalifs.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DSAlumnos.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSAlumnos.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DsArticuloOrganizacionAño.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DsArticuloOrganizacionAño.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DsArticulos.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DsArticulos.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DsAutores.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DsAutores.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DsAutoresMasArticulos.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DsAutoresMasArticulos.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DsBecaInstitucionArticulo.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DsBecaInstitucionArticulo.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DsCdEdos.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DsCdEdos.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DsCongreso.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DsCongreso.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DsCongresos.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DsCongresos.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DsEmpresaCongresoMonto.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DsEmpresaCongresoMonto.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DSMaterias.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSMaterias.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DsOrganizaciones.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DsOrganizaciones.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMenú.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMenú.Designer.cs">
+      <DependentUpon>FrmMenú.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Tablas\FrmArticulos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tablas\FrmArticulos.Designer.cs">
+      <DependentUpon>FrmArticulos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tablas\FrmAutores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tablas\FrmAutores.Designer.cs">
+      <DependentUpon>FrmAutores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tablas\FrmCongresos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tablas\FrmCongresos.Designer.cs">
+      <DependentUpon>FrmCongresos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Procesos\FrmConsultas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procesos\FrmConsultas.Designer.cs">
+      <DependentUpon>FrmConsultas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Procesos\FrmFuncProg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procesos\FrmFuncProg.Designer.cs">
+      <DependentUpon>FrmFuncProg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tablas\FrmGeneral.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tablas\FrmGeneral.Designer.cs">
+      <DependentUpon>FrmGeneral.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tablas\FrmOrganizaciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tablas\FrmOrganizaciones.Designer.cs">
+      <DependentUpon>FrmOrganizaciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Varios\Comunes.cs" />
+    <EmbeddedResource Include="FrmMenú.resx">
+      <DependentUpon>FrmMenú.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Tablas\FrmArticulos.resx">
+      <DependentUpon>FrmArticulos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tablas\FrmAutores.resx">
+      <DependentUpon>FrmAutores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tablas\FrmCongresos.resx">
+      <DependentUpon>FrmCongresos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procesos\FrmConsultas.resx">
+      <DependentUpon>FrmConsultas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procesos\FrmFuncProg.resx">
+      <DependentUpon>FrmFuncProg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tablas\FrmGeneral.resx">
+      <DependentUpon>FrmGeneral.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tablas\FrmOrganizaciones.resx">
+      <DependentUpon>FrmOrganizaciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="DataSet1.xsc">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet1.xss">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet2.xsc">
+      <DependentUpon>DataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet2.xss">
+      <DependentUpon>DataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="DSAlumCalifs.xsc">
+      <DependentUpon>DSAlumCalifs.xsd</DependentUpon>
+    </None>
+    <None Include="DSAlumCalifs.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSAlumCalifs.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DSAlumCalifs.xss">
+      <DependentUpon>DSAlumCalifs.xsd</DependentUpon>
+    </None>
+    <None Include="DSAlumnos.xsc">
+      <DependentUpon>DSAlumnos.xsd</DependentUpon>
+    </None>
+    <None Include="DSAlumnos.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSAlumnos.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DSAlumnos.xss">
+      <DependentUpon>DSAlumnos.xsd</DependentUpon>
+    </None>
+    <None Include="DsArticuloOrganizacionAño.xsc">
+      <DependentUpon>DsArticuloOrganizacionAño.xsd</DependentUpon>
+    </None>
+    <None Include="DsArticuloOrganizacionAño.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DsArticuloOrganizacionAño.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DsArticuloOrganizacionAño.xss">
+      <DependentUpon>DsArticuloOrganizacionAño.xsd</DependentUpon>
+    </None>
+    <None Include="DsArticulos.xsc">
+      <DependentUpon>DsArticulos.xsd</DependentUpon>
+    </None>
+    <None Include="DsArticulos.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DsArticulos.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DsArticulos.xss">
+      <DependentUpon>DsArticulos.xsd</DependentUpon>
+    </None>
+    <None Include="DsAutores.xsc">
+      <DependentUpon>DsAutores.xsd</DependentUpon>
+    </None>
+    <None Include="DsAutores.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DsAutores.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DsAutores.xss">
+      <DependentUpon>DsAutores.xsd</DependentUpon>
+    </None>
+    <None Include="DsAutoresMasArticulos.xsc">
+      <DependentUpon>DsAutoresMasArticulos.xsd</DependentUpon>
+    </None>
+    <None Include="DsAutoresMasArticulos.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DsAutoresMasArticulos.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DsAutoresMasArticulos.xss">
+      <DependentUpon>DsAutoresMasArticulos.xsd</DependentUpon>
+    </None>
+    <None Include="DsBecaInstitucionArticulo.xsc">
+      <DependentUpon>DsBecaInstitucionArticulo.xsd</DependentUpon>
+    </None>
+    <None Include="DsBecaInstitucionArticulo.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DsBecaInstitucionArticulo.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DsBecaInstitucionArticulo.xss">
+      <DependentUpon>DsBecaInstitucionArticulo.xsd</DependentUpon>
+    </None>
+    <None Include="DsCdEdos.xsc">
+      <DependentUpon>DsCdEdos.xsd</DependentUpon>
+    </None>
+    <None Include="DsCdEdos.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DsCdEdos.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DsCdEdos.xss">
+      <DependentUpon>DsCdEdos.xsd</DependentUpon>
+    </None>
+    <None Include="DsCongreso.xsc">
+      <DependentUpon>DsCongreso.xsd</DependentUpon>
+    </None>
+    <None Include="DsCongreso.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DsCongreso.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DsCongreso.xss">
+      <DependentUpon>DsCongreso.xsd</DependentUpon>
+    </None>
+    <None Include="DsCongresos.xsc">
+      <DependentUpon>DsCongresos.xsd</DependentUpon>
+    </None>
+    <None Include="DsCongresos.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DsCongresos.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DsCongresos.xss">
+      <DependentUpon>DsCongresos.xsd</DependentUpon>
+    </None>
+    <None Include="DsEmpresaCongresoMonto.xsc">
+      <DependentUpon>DsEmpresaCongresoMonto.xsd</DependentUpon>
+    </None>
+    <None Include="DsEmpresaCongresoMonto.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DsEmpresaCongresoMonto.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DsEmpresaCongresoMonto.xss">
+      <DependentUpon>DsEmpresaCongresoMonto.xsd</DependentUpon>
+    </None>
+    <None Include="DSMaterias.xsc">
+      <DependentUpon>DSMaterias.xsd</DependentUpon>
+    </None>
+    <None Include="DSMaterias.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSMaterias.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DSMaterias.xss">
+      <DependentUpon>DSMaterias.xsd</DependentUpon>
+    </None>
+    <None Include="DsOrganizaciones.xsc">
+      <DependentUpon>DsOrganizaciones.xsd</DependentUpon>
+    </None>
+    <None Include="DsOrganizaciones.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DsOrganizaciones.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DsOrganizaciones.xss">
+      <DependentUpon>DsOrganizaciones.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DsEmpresaCongresoMonto" targetNamespace="http://tempuri.org/DsEmpresaCongresoMonto.xsd" xmlns:mstns="http://tempuri.org/DsEmpresaCongresoMonto.xsd" xmlns="http://tempuri.org/DsEmpresaCongresoMonto.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="ConexionBD01" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="ConexionBD01 (Settings)" PropertyReference="ApplicationSettings.AplicaciónCSBD.Properties.Settings.GlobalReference.Default.ConexionBD01" Provider="System.Data.OracleClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="EMPRESACONGRESOMONTOTableAdapter" GeneratorDataComponentClassName="EMPRESACONGRESOMONTOTableAdapter" Name="EMPRESACONGRESOMONTO" UserDataComponentName="EMPRESACONGRESOMONTOTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ConexionBD01 (Settings)" DbObjectName="BD01.EMPRESACONGRESOMONTO" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT NOMBRE, MONTO FROM BD01.EMPRESACONGRESOMONTO</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="NOMBRE" DataSetColumn="NOMBRE" />
+              <Mapping SourceColumn="MONTO" DataSetColumn="MONTO" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DsEmpresaCongresoMonto" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="DsEmpresaCongresoMonto" msprop:Generator_UserDSName="DsEmpresaCongresoMonto">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="EMPRESACONGRESOMONTO" msprop:Generator_TableClassName="EMPRESACONGRESOMONTODataTable" msprop:Generator_TableVarName="tableEMPRESACONGRESOMONTO" msprop:Generator_TablePropName="EMPRESACONGRESOMONTO" msprop:Generator_RowDeletingName="EMPRESACONGRESOMONTORowDeleting" msprop:Generator_RowChangingName="EMPRESACONGRESOMONTORowChanging" msprop:Generator_RowEvHandlerName="EMPRESACONGRESOMONTORowChangeEventHandler" msprop:Generator_RowDeletedName="EMPRESACONGRESOMONTORowDeleted" msprop:Generator_UserTableName="EMPRESACONGRESOMONTO" msprop:Generator_RowChangedName="EMPRESACONGRESOMONTORowChanged" msprop:Generator_RowEvArgName="EMPRESACONGRESOMONTORowChangeEvent" msprop:Generator_RowClassName="EMPRESACONGRESOMONTORow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="NOMBRE" msprop:Generator_ColumnVarNameInTable="columnNOMBRE" msprop:Generator_ColumnPropNameInRow="NOMBRE" msprop:Generator_ColumnPropNameInTable="NOMBREColumn" msprop:Generator_UserColumnName="NOMBRE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="60" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MONTO" msprop:Generator_ColumnVarNameInTable="columnMONTO" msprop:Generator_ColumnPropNameInRow="MONTO" msprop:Generator_ColumnPropNameInTable="MONTOColumn" msprop:Generator_UserColumnName="MONTO" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
