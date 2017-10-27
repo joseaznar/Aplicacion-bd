@@ -19,9 +19,6 @@ C:\BD\AplicaciónCSBD\obj\Debug\AplicaciónCSBD.exe
 C:\BD\AplicaciónCSBD\obj\Debug\AplicaciónCSBD.pdb
 C:\BD\AplicaciónCSBD\obj\Debug\AplicaciónCSBD.csprojResolveAssemblyReference.cache
 C:\BD\AplicaciónCSBD\obj\Debug\AplicaciónCSBD.FrmMenú.resources
-C:\BD\AplicaciónCSBD\obj\Debug\AplicaciónCSBD.Procesos.FrmConsulta.resources
-C:\BD\AplicaciónCSBD\obj\Debug\AplicaciónCSBD.Procesos.FrmGestorBD.resources
-C:\BD\AplicaciónCSBD\obj\Debug\AplicaciónCSBD.Procesos.FrmSubprogsAlm.resources
 C:\BD\AplicaciónCSBD\obj\Debug\AplicaciónCSBD.Properties.Resources.resources
 C:\BD\AplicaciónCSBD\obj\Debug\AplicaciónCSBD.Tablas.FrmArticulos.resources
 C:\BD\AplicaciónCSBD\obj\Debug\AplicaciónCSBD.Tablas.FrmAutores.resources

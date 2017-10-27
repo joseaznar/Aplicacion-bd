@@ -22,24 +22,6 @@ namespace AplicaciónCSBD
       Application.Exit();
     }
 
-    //Abre la forma de la consulta.
-    private void MnuConsulta_Click(object sender, EventArgs e) {
-      Procesos.FrmConsulta fc = new Procesos.FrmConsulta();
-      fc.ShowDialog();
-    }
-
-    //Forma para ejecutar subprogs. almacenados.
-    private void MnuSubprogsAlm_Click(object sender, EventArgs e) {
-      Procesos.FrmSubprogsAlm fsa = new Procesos.FrmSubprogsAlm();
-      fsa.Show();
-    }
-
-    //Forma que usa al GestorBD.
-    private void MnuGestorBD_Click(object sender, EventArgs e) {
-      Procesos.FrmGestorBD fg = new Procesos.FrmGestorBD();
-      fg.Show();
-    }
-
     //Abre la forma de congresos
     private void congresosToolStripMenuItem_Click(object sender, EventArgs e)
     {

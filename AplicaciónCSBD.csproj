@@ -151,16 +151,16 @@
     <Compile Include="Tablas\FrmCongresos.Designer.cs">
       <DependentUpon>FrmCongresos.cs</DependentUpon>
     </Compile>
-    <Compile Include="Procesos\FrmConsultas.cs">
+    <Compile Include="Tablas\FrmConsultas.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Procesos\FrmConsultas.Designer.cs">
+    <Compile Include="Tablas\FrmConsultas.Designer.cs">
       <DependentUpon>FrmConsultas.cs</DependentUpon>
     </Compile>
-    <Compile Include="Procesos\FrmFuncProg.cs">
+    <Compile Include="Tablas\FrmFuncProg.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Procesos\FrmFuncProg.Designer.cs">
+    <Compile Include="Tablas\FrmFuncProg.Designer.cs">
       <DependentUpon>FrmFuncProg.cs</DependentUpon>
     </Compile>
     <Compile Include="Tablas\FrmGeneral.cs">
@@ -197,10 +197,10 @@
     <EmbeddedResource Include="Tablas\FrmCongresos.resx">
       <DependentUpon>FrmCongresos.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Procesos\FrmConsultas.resx">
+    <EmbeddedResource Include="Tablas\FrmConsultas.resx">
       <DependentUpon>FrmConsultas.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Procesos\FrmFuncProg.resx">
+    <EmbeddedResource Include="Tablas\FrmFuncProg.resx">
       <DependentUpon>FrmFuncProg.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Tablas\FrmGeneral.resx">
